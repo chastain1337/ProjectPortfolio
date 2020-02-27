@@ -22,7 +22,8 @@ function Projects() {
 
   return (
     <div className="text-center">
-      Projects coming soon. Last update {lastUpdate}.
+      Projects coming soon.{" "}
+      <div>{lastUpdate ? `Last update ${lastUpdate}` : null}.</div>
       {/*<Container>
       <Row className="text-center border">
         <Col sm>Column 1</Col>
