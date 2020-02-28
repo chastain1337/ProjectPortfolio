@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import Project from "./Project";
 
 function Projects() {
   const [lastUpdate, setLastUpdate] = useState();
@@ -22,15 +23,15 @@ function Projects() {
 
   return (
     <div className="text-center">
-      Projects coming soon.{" "}
-      <div>{lastUpdate ? `Last update ${lastUpdate}` : null}.</div>
-      {/*<Container>
-      <Row className="text-center border">
-        <Col sm>Column 1</Col>
-        <Col sm>Column 2</Col>
-        <Col sm>Column 3</Col>
-      </Row>
-    </Container>*/}
+      {/*Projects coming soon.{" "}
+      <div>{lastUpdate ? `Last update ${lastUpdate}` : null}.</div>*/}
+      <Container>
+        <Row className="text-center border">
+          <Project />
+          <Project />
+          <Project />
+        </Row>
+      </Container>
     </div>
   );
 }
