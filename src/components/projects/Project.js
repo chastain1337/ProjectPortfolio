@@ -1,11 +1,11 @@
 import React from "react";
 import { Col, Image, Row, Container} from "react-bootstrap";
-import ProjectImage from "./ProjectImage"
+import ProjectColumn1 from "./ProjectColumn1"
 import ProjectHeader from "./ProjectHeader";
 
 function Project(props) {
-  const leftLayout = <Row><ProjectImage /><ProjectHeader right={props.right} projectObj={props.projectObj}/></Row>
-  const rightLayout = <Row><ProjectHeader right={props.right} projectObj={props.projectObj}/><ProjectImage /></Row>
+  const leftLayout = <Row><ProjectColumn1 data={props.projectObj.column1Data}/><ProjectHeader right={props.right} projectObj={props.projectObj}/></Row>
+  const rightLayout = <Row><ProjectHeader right={props.right} projectObj={props.projectObj}/><ProjectColumn1 data={props.projectObj.column1Data}/></Row>
   
   return (
     <Container fluid style={{padding: "0% 5%"}}>
