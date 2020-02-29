@@ -3,8 +3,7 @@ import "./App.css";
 import Head from "./components/Head";
 import Resume from "./components/Resume";
 import { HashRouter, Route } from "react-router-dom";
-import Projects from "./components/Projects";
-//import Projects from "./components/Projects";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (

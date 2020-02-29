@@ -1,78 +1,26 @@
 import React from "react";
-import { Container, Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Row, Container } from "react-bootstrap";
+import ProjectDetail from "./ProjectDetail"
 
 function Project() {
   return (
-    <Col>
-      <Container>
-        <Row>
-          <Col>
-            <Image
-              fluid
-              rounded
-              src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"
-              alt="Project"
-            />
-          </Col>
-          <Col>
-            <Row>
-              <Col md={1}>
-                <i />
-              </Col>
-              <Col md={11}>
-                <h5>Some Header</h5>
-                <p>
-                  Some text goes right here and it's generally a little bit
-                  longer so I put this here as a placeholder while I figure this
-                  thing out.
-                </p>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    </Col>
+    <Container>
+    <Row>
+      <Col lg={5} mb-lg={0} mb-5>
+        <Image fluid rounded src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"/>
+      </Col>
+      <Col lg={7}>
+        <ProjectDetail />
+        <ProjectDetail />
+        <ProjectDetail />
+      </Col>
+    </Row>  
+    </Container>
   );
 
   {
     /* 
-
-<!-- Projects section v.3 -->
-<section class="my-5">
-
-  <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5">Our best projects</h2>
-  <!-- Section description -->
-  <p class="grey-text text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
-
-  <!-- Grid row -->
-  <div class="row">
-
-    <!-- Grid column -->
-    <div class="col-lg-5 mb-lg-0 mb-5">
-      <!--Image-->
-      <img src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-7">
-
-      <!-- Grid row -->
-      <div class="row mb-3">
-        <div class="col-md-1 col-2">
-          <i class="fas fa-book fa-2x cyan-text"></i>
-        </div>
-        <div class="col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Education</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing. Reprehenderit maiores nam,
-            aperiam minima elit assumenda voluptate velit.</p>
-        </div>
-      </div>
-      <!-- Grid row -->
-
+  
       <!-- Grid row -->
       <div class="row mb-3">
         <div class="col-md-1 col-2">
@@ -167,7 +115,6 @@ function Project() {
 
 </section>
 <!-- Projects section v.3 -->
-
 */
   }
 }

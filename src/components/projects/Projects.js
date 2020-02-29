@@ -22,17 +22,11 @@ function Projects() {
   }
 
   return (
-    <div className="text-center">
+    <>
       {/*Projects coming soon.{" "}
       <div>{lastUpdate ? `Last update ${lastUpdate}` : null}.</div>*/}
-      <Container>
-        <Row className="text-center border">
-          <Project />
-          <Project />
-          <Project />
-        </Row>
-      </Container>
-    </div>
+      <Project />
+    </>
   );
 }
 
