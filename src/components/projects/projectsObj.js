@@ -11,7 +11,8 @@ const projects = [
     languages: "JavaScript",
     column1Data: {
       imageUrl: process.env.PUBLIC_URL + "/intranet_preview.gif",
-      sourceUrl: "https://github.com/chastain1337/intranet_full"
+      sourceUrl: "https://github.com/chastain1337/intranet_full",
+      altText: "mock intranet"
     },
     frameworks: "Mongoose, Express, React, Node",
     projectDetails: [
@@ -34,10 +35,11 @@ const projects = [
     languages: "Python",
     frameworks: "PyQt5, Requests, ElementTree",
     column1Data: {
-      imageUrl: "",
+      imageUrl: process.env.PUBLIC_URL + "/ebay_preview.gif",
       sourceUrl: "https://github.com/chastain1337/eBayProductDetailsGetter",
       downloadExeUrl:
-        process.env.PUBLIC_URL + "/eBay_Product_Details_Getter.zip"
+        process.env.PUBLIC_URL + "/eBay_Product_Details_Getter.zip",
+      altText: "eBay GUI app"
     },
     projectDetails: [
       new ProjectDetailInfo(
@@ -59,9 +61,10 @@ const projects = [
     languages: "JavaScript",
     frameworks: "React",
     column1Data: {
-      imageUrl: "",
+      imageUrl: process.env.PUBLIC_URL + "/decision-maker_sample.gif",
       sourceUrl: "https://github.com/chastain1337/decision-maker",
-      liveDemoUrl: "/Projects/decision-maker"
+      liveDemoUrl: "/Projects/decision-maker",
+      altText: "decision maker"
     },
     projectDetails: [
       new ProjectDetailInfo(

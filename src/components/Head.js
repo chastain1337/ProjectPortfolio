@@ -22,7 +22,7 @@ function Head() {
         as={Link}
         to="/Projects"
         className="mt-2"
-        title={"View Resumé"}
+        title={"View Projects"}
         variant="info">
         View Projects
       </Button>

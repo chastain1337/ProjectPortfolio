@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 function ProjectColumn1(props) {
   return (
     <Col lg={5} mb-lg={0}>
-      <Image fluid className="z-depth-5 rounded-lg" src={props.data.imageUrl} />
+      <Image
+        fluid
+        className="rounded-lg"
+        src={props.data.imageUrl}
+        alt={props.data.altText}
+      />
       <Button
         size="sm"
         className="mt-1 mr-2"
