@@ -1,7 +1,6 @@
 import React from "react";
 import { Jumbotron, DropdownButton, Dropdown, Button } from "react-bootstrap";
 import { HashRouter, Route, Link } from "react-router-dom";
-//import { LinkContainer } from "react-router-bootstrap";
 
 function Head() {
   return (
@@ -15,8 +14,7 @@ function Head() {
         <Dropdown.Item
           eventKey="2"
           href={process.env.PUBLIC_URL + "/Resume.pdf"}
-          download="James Chastain Resume.pdf"
-        >
+          download="James Chastain Resume.pdf">
           Download
         </Dropdown.Item>
       </DropdownButton>
@@ -25,8 +23,7 @@ function Head() {
         to="/Projects"
         className="mt-2"
         title={"View Resumé"}
-        variant="info"
-      >
+        variant="info">
         View Projects
       </Button>
     </Jumbotron>
